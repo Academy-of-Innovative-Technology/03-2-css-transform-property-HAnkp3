@@ -8,7 +8,36 @@
 }
 
 /* ==== CODE ALONG ==== */
+    #box1 {
+        transform: scale(1.6);
+        
+    }
+    #box2 {
+        transform: translate(50px, 50px);
+    }
+    #box3 {
+        transform: rotate(45deg);
+    }
+    #box4 {
+        transform: skew(20deg, 10deg);
+    }
 
+    #box1:hover {
+  transform: scale(1.6) rotate(360deg);
+  transition: 0.3s ease;
+}
+  #box2:hover { 
+     transform: translate(50px, 50px) rotate(360deg);
+     transition: 0.3s ease;
+  }
+  #box3:hover {
+    transform: rotate(45deg) rotate(360deg);
+    transition: 0.3s ease;
+  }
+  #box4:hover {
+    transform: skew(20deg, 10deg) rotate(360deg);
+    transition: 0.3s ease;
+  }
 
 
 /* ==== CODE SOLO ==== */
@@ -17,3 +46,4 @@
 
 
 /* BONUS: Try combining the :hover selector with the transform property. Try to make the boxes spin when you hover over them. Use the transition: 0.3s ease; property and value to make it smoother. */
+        
